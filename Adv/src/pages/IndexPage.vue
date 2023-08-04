@@ -5,7 +5,7 @@
     <p>Constituição da República Federativa do Brasil</p>
   </main>
 
-  <div class="q-pa-md">
+  <div class="q-pa-md" id="Carrossel">
     <q-carousel
       animated
       v-model="slide"
@@ -72,22 +72,22 @@
 
 #Atuacao{
   margin-top: 20px;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  
   flex-direction: column;
 }
 
 #Atuacao h1{
-  color: #FFC869;
+  color: black;
 }
 
 .textoAreas{
   
   width: 100%;
-  background-color: black;
+  
   display: flex;
   height: 45vh;
   justify-content: space-evenly;
@@ -97,7 +97,7 @@
 html, body{
   margin:0px !important;
   padding: 0px !important;
-  background-color: black;
+  
 }
 
 
@@ -107,7 +107,7 @@ html, body{
     height: 25vh;
     padding-top: 5%;
     
-    color: white;
+    color: black;
     display:flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -116,24 +116,11 @@ html, body{
 }
 
 #textoadv{
-  color: #FFC869;
+  color: black;
 } 
   
 
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script setup>

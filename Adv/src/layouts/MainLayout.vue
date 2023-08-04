@@ -106,7 +106,7 @@
 .cards{
 
   color: white;
-  border: 2px solid #ffa500;
+  border: 2px solid rgb(183, 156, 84);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,8 +122,8 @@
 
   
   height: 100vh;
-  border-top: 2px solid #ffa500;
-  background-color: black;
+  border-top: 2px solid rgb(183, 156, 84);
+  background-color: rgb(11, 31, 19);
   display: flex;
   flex-direction: row;
   font-size: 16px;
@@ -143,13 +143,13 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: rgb(11, 31, 19);
   border-bottom: 2px solid white;
   display: flex;
   justify-content: center;
   flex-direction: row;
   width: 100%;
-  border-bottom: 2px solid #ffa500;
+  border-bottom: 2px solid rgb(183, 156, 84);
 
 }
 
@@ -157,7 +157,7 @@ ul {
 
 li a {
   display: block;
-  color: #FFC869;
+  color: rgb(183, 156, 84);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -166,7 +166,7 @@ li a {
 
 
 li a:hover {
-  background-color: #FFC869;
+  background-color: rgb(183, 156, 84);
   color: black;
 }
 
