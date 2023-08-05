@@ -3,7 +3,7 @@
     
     <nav>
       <ul>
-        <li><router-link to="/Home">Home</router-link></li>
+        <li><router-link to="/Home">HOME</router-link></li>
         <li><router-link to="/Escritorio">ESCRITÓRIO</router-link></li>
         <li><router-link to="AboutView">ÁREAS DE ATUAÇÃO</router-link></li>
         <li><router-link to="AboutView">ESSA É PRA VOCÊ</router-link></li>
