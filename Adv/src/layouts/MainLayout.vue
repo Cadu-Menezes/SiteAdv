@@ -14,7 +14,10 @@
       <router-view />
     </q-page-container>
 
-
+    <div id="ImgWpp">
+      <img src="../../public/Imgs/whatsapp.png" alt="" width="70">
+    </div>
+   
     <footer class="footer">
     
       <div class="TextosFooter">
@@ -36,6 +39,13 @@
 
 
 <style>
+
+#ImgWpp{
+  position: fixed;
+  bottom: 50%;
+  right: 1%;
+
+}
 
 .Page{
   flex: 1;
