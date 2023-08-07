@@ -195,6 +195,7 @@ html, body{
 } 
 
 #TxtPrincipal{
+  
   width: 90%;
   text-align: center;
 }

@@ -1,22 +1,26 @@
 <template>
-  <div id="ContainerCards">
-  
-    <Div id="QuemSomos">
-        <h4>Quem Somos</h4>
-        <p>Nosso escritório conta com especialistas nas áreas de direito previdenciário, trabalhista, empresarial, tributário, cível e criminal, possibilitando a prestação de assessoria jurídica, tanto para pessoas físicas, como para pessoas jurídicas,  atuando nas demandas preventivas e contenciosas, para assegurar a defesa dos interesses dos nossos clientes.</p>
+ 
+ <div id="ContainerCards">
+
+    <Div id="Cards">
+
+      <Div id="QuemSomos">
+          <h4>Quem Somos</h4>
+          <p>Nosso escritório conta com especialistas nas áreas de direito previdenciário, trabalhista, empresarial, tributário, cível e criminal, possibilitando a prestação de assessoria jurídica, tanto para pessoas físicas, como para pessoas jurídicas,  atuando nas demandas preventivas e contenciosas, para assegurar a defesa dos interesses dos nossos clientes.</p>
+      </Div>
+
+      <Div id="Missao">
+          <h4>Missão</h4>
+          <p>Nossa missão é fornecer ao nosso cliente suporte especializado e de qualidade para qualquer demanda jurídica.</p>
+      </Div>
+
+      <Div id="Valores">
+          <h4>Valores</h4>
+          <p>Atuar com ética, transparência e responsabilidade.</p>
+      </Div>
+
     </Div>
 
-    <Div id="Missao">
-        <h4>Missão</h4>
-        <p>Nossa missão é fornecer ao nosso cliente suporte especializado e de qualidade para qualquer demanda jurídica.</p>
-    </Div>
-
-    <Div id="Valores">
-        <h4>Valores</h4>
-        <p>Atuar com ética, transparência e responsabilidade.</p>
-    </Div>
-  
-    
   </div>
 
   <div id="OsSocios">
@@ -89,10 +93,10 @@
   border: 3px solid rgb(183, 156, 84);
   border-radius: 10px;
   width: 30%;
-  height: 95%;
   background-color: #275039;
   padding: 0.5%;
   color: white;
+  top: 0; left: 0; right: 0;
   
 }
 
@@ -107,11 +111,13 @@
 #OsSocios{
   /* border: 2px solid black; */
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin:0 auto;
+  margin-bottom: 1%;
 }
 
 #ContainerSocios{
@@ -162,21 +168,32 @@
   border-radius: 10px;
   background-color: #275039;
   color: white;
+  
 }
 
 #QuemSomos h4{
   color: rgb(183, 156, 84);
 }
 
-#ContainerCards{
-  /* border: 2px solid black; */
-  width: 100%;
-  height: 75vh;
+#Cards{
+  /* border: 2px solid red;  */
   display: flex ;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  width: 100%;
+  top: 0; left: 0; right: 0;
+  margin-top: 1%;
+  
+}
 
+#ContainerCards{
+
+  /* border: 2px solid blue;  */
+  position: relative;
+  max-width: 100%;
+  margin:0 auto;
+ 
 }
 
 </style>

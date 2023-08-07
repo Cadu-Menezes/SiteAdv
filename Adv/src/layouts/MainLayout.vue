@@ -14,10 +14,27 @@
       <router-view />
     </q-page-container>
 
-    <div id="ImgWpp">
+    <!-- <div id="ImgWpp">
       <img src="../../public/Imgs/whatsapp.png" alt="" width="70">
-    </div>
+    </div> -->
    
+    
+    <div id="ImgWpp">
+    
+      <q-fab style=" background-color: rgb(183, 156, 84);" text-color="black" icon="keyboard_arrow_left" direction="left">
+        <template v-slot:label="{ opened }">
+          <div :class="{ 'example-fab-animate--hover': opened !== true }">
+            {{ opened !== true ? 'Sociais' : 'Fechar' }}
+          </div>
+        </template>
+
+        <q-fab-action color="primary" @click="onClick" icon="fa-brands fa-facebook" style="color: #ffffff" />
+        <q-fab-action  @click="onClick" icon="fab fa-instagram" style="color: #ffffff; background-color: #E0115F;" />
+      </q-fab>
+    
+    </div>
+
+
     <footer class="footer">
     
       <div class="TextosFooter">
@@ -125,7 +142,35 @@ li a:hover {
 </style>
 
 
-<script>
+<style lang="sass" scoped>
+.example-fab-animate,
+.q-fab:hover .example-fab-animate--hover
+  animation: example-fab-animate 0.82s cubic-bezier(.36,.07,.19,.97) both
+  transform: translate3d(0, 0, 0)
+  backface-visibility: hidden
+  perspective: 1000px
 
+@keyframes example-fab-animate
+  10%, 90%
+    transform: translate3d(-1px, 0, 0)
+
+  20%, 80%
+    transform: translate3d(2px, 0, 0)
+
+  30%, 50%, 70%
+    transform: translate3d(-4px, 0, 0)
+
+  40%, 60%
+    transform: translate3d(4px, 0, 0)
+</style>
+
+<script>
+export default {
+  methods: {
+    onClick () {
+      // console.log('Clicked on a fab action')
+    }
+  }
+}
 </script>
 
