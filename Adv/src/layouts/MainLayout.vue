@@ -30,6 +30,7 @@
 
         <q-fab-action color="primary" @click="onClick" icon="fa-brands fa-facebook" style="color: #ffffff" />
         <q-fab-action  @click="onClick" icon="fab fa-instagram" style="color: #ffffff; background-color: #E0115F;" />
+        <q-fab-action @click="onClick" icon="fab fa-whatsapp"  style="color: #ffffff; background-color: green;" />
       </q-fab>
     
     </div>

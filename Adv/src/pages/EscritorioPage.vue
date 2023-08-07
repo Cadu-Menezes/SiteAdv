@@ -4,9 +4,9 @@
 
     <Div id="Cards">
 
-      <Div id="QuemSomos">
-          <h4>Quem Somos</h4>
-          <p>Nosso escritório conta com especialistas nas áreas de direito previdenciário, trabalhista, empresarial, tributário, cível e criminal, possibilitando a prestação de assessoria jurídica, tanto para pessoas físicas, como para pessoas jurídicas,  atuando nas demandas preventivas e contenciosas, para assegurar a defesa dos interesses dos nossos clientes.</p>
+      <Div id="Valores">
+          <h4>Valores</h4>
+          <p>Atuar com ética, transparência e responsabilidade.</p>
       </Div>
 
       <Div id="Missao">
@@ -14,9 +14,9 @@
           <p>Nossa missão é fornecer ao nosso cliente suporte especializado e de qualidade para qualquer demanda jurídica.</p>
       </Div>
 
-      <Div id="Valores">
-          <h4>Valores</h4>
-          <p>Atuar com ética, transparência e responsabilidade.</p>
+      <Div id="QuemSomos">
+          <h4>Quem Somos</h4>
+          <p>Nosso escritório conta com especialistas nas áreas de direito previdenciário, trabalhista, empresarial, tributário, cível e criminal, possibilitando a prestação de assessoria jurídica, tanto para pessoas físicas, como para pessoas jurídicas,  atuando nas demandas preventivas e contenciosas, para assegurar a defesa dos interesses dos nossos clientes.</p>
       </Div>
 
     </Div>
@@ -56,6 +56,11 @@
 </template>
 
 <style>
+
+html{
+  background-color: #355a36;
+  color: white;
+}
 
 #Imagem1{
   /* border: 2px solid yellow; */
@@ -106,6 +111,7 @@
 
 .Titulo{
   text-align: center;
+  color: white;
 }
 
 #OsSocios{
@@ -132,7 +138,7 @@
 #Valores{
   border: 2px solid rgb(183, 156, 84);
   text-align: center;
-  margin-top: 2%;
+ 
   padding: 0.5%;
   border-radius: 10px;
   background-color: #275039;
@@ -161,6 +167,7 @@
 }
 
 #QuemSomos{
+  margin-top: 2%;
   border: 3px solid rgb(183, 156, 84);
   text-align: center;
   width: 90%;

@@ -48,7 +48,7 @@
           <label for="Message">Mensagem:</label>
           <textarea name="message" id="message" cols="30" rows="10" placeholder="Escreva sua mensagem aqui."></textarea>
           
-          <button type="submit">Enviar</button>
+          <q-btn color="green" icon-right="mail" label="Enviar Email" />
 
         </form>
         
@@ -68,21 +68,6 @@
 
 .form button{
   margin-top: 10px;
-}
-
-.TextoIcone{
-  margin: 0px 0px 0px 10px;
-}
-
-.textoCIcone{
-  margin-left: 10px;
-  margin-top: 15px;
-  word-spacing: 1px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex: 0;
 }
 
 #formContato{
@@ -115,47 +100,82 @@
   
 }
 
-#txt1{
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  position: initial;
-  margin: 10px;
-  align-items: center;
-  
-}
-
-#txt2{
+/* #txt2{
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   margin: 10px;
   align-items: center;
+} */
+
+.TextoIcone{
+  margin: 20px 0px 0px 10px;
 }
 
-#Atuacao{
-  margin-top: 20px;
-  color: black;
+.textoCIcone{
+  margin-left: 10px;
+  margin-top: 15px;
+  word-spacing: 1px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: center;
   
-  flex-direction: column;
+  border: 2px solid rgb(183, 156, 84);
+  background-color: #275039;
+
+  color: white;
+
+  padding: 2%;
+  
+  border-radius: 10px;
+  max-width: 30%;
+  height: 80%;
+
+  cursor: pointer;
 }
 
-#Atuacao h1{
-  color: black;
+.textoCIcone:hover{
+  background-color: black;
 }
+
+#txt1{
+
+  /* border: 2px solid green; */
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  overflow: auto;;
+  margin: 10px;
+   
+  /* position: initial; */
+}
+
+
 
 .textoAreas{
   
+  /* border: 2px solid blue; */
+  top: 0; left: 0; right: 0;
   width: 100%;
   font-weight: bold;
   display: flex;
-  height: 45vh;
-  justify-content: space-evenly;
+}
+
+#Atuacao{
+
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  color: black;
+  text-align: center;
   
 }
+
+#Atuacao h1{
+  color: white;
+}
+
+
 
 html, body{
   margin:0px !important;
@@ -220,16 +240,22 @@ const Area1 =  ref([
   {texto: "TRABALHISTA ", icone: "fa-solid fa-briefcase fa-2xl"},
   {texto: "CRIMINAL ", icone: "fa-solid fa-handcuffs fa-2xl"},
   {texto: "TRIBUTÁRIA ", icone: "fa-solid fa-money-bill-1-wave fa-2xl"},
-  {texto: "RECUPERAÇÃO JUDICIAL / FALÊNCIA ", icone: "fa-solid fa-money-bill-transfer fa-2xl"}
-  ])
-
-const Area2 =  ref([
+  {texto: "RECUPERAÇÃO JUDICIAL / FALÊNCIA ", icone: "fa-solid fa-money-bill-transfer fa-2xl"},
 
   {texto: "CIVIL", icone: "fa-solid fa-person fa-2xl"},
   {texto: "CONSUMIDOR", icone: "fa-solid fa-cart-shopping fa-2xl"},
   {texto: "SUCESSÕES (INVENTÁRIO)", icone: "fa-solid fa-cart-flatbed fa-2xl"},
   {texto: "FAMÍLIA", icone: "fa-solid fa-people-group fa-2xl"},
   {texto: "EMPRESARIAL", icone: "fa-solid fa-building fa-2xl"}
-])
+  ])
+
+// const Area2 =  ref([
+
+//   {texto: "CIVIL", icone: "fa-solid fa-person fa-2xl"},
+//   {texto: "CONSUMIDOR", icone: "fa-solid fa-cart-shopping fa-2xl"},
+//   {texto: "SUCESSÕES (INVENTÁRIO)", icone: "fa-solid fa-cart-flatbed fa-2xl"},
+//   {texto: "FAMÍLIA", icone: "fa-solid fa-people-group fa-2xl"},
+//   {texto: "EMPRESARIAL", icone: "fa-solid fa-building fa-2xl"}
+// ])
 
 </script>
