@@ -1,23 +1,18 @@
 <template>
   <q-layout view="lHh Lpr lFf" class="Container">
     
-    <nav>
+    <nav class="MenuPag">
       <ul>
-        <li><router-link to="/Home">HOME</router-link></li>
-        <li><router-link to="/Escritorio">ESCRITÓRIO</router-link></li>
-        <li><router-link to="AboutView">ÁREAS DE ATUAÇÃO</router-link></li>
-        <li><router-link to="AboutView">ESSA É PRA VOCÊ</router-link></li>
+        <li><router-link to="#Container">HOME</router-link></li>
+        <li><router-link to="#OsSocios">ESCRITÓRIO</router-link></li>
+        <li><router-link to="#Atuacao">ÁREAS DE ATUAÇÃO</router-link></li>
       </ul>
     </nav>
 
     <q-page-container class="Page">
       <router-view />
     </q-page-container>
-
-    <!-- <div id="ImgWpp">
-      <img src="../../public/Imgs/whatsapp.png" alt="" width="70">
-    </div> -->
-   
+  
     
     <div id="ImgWpp">
     
@@ -78,27 +73,31 @@
 
 .TextosFooter{
 
-  width: 100%;
-  
-  display: flex;
-  justify-content: space-around;
-  padding-top: 0.5%;
-  
+width: 100%;
+
+display: flex;
+justify-content: space-around;
+padding-top: 0.5%;
+
 }
-      
+
 .footer{
-
-  
-  height: 6vh;
-  border-top: 2px solid rgb(183, 156, 84);
-  background-color: rgb(11, 31, 19);
-  display: flex;
-  flex-direction: row;
-  font-size: 16px;
-  color: white;
+width: 100%;
+height: 100%;
+border-top: 2px solid rgb(183, 156, 84);
+background-color: rgb(11, 31, 19);
+display: flex;
+flex-direction: row;
+font-size: 16px;
+color: white;
 
 }
 
+.MenuPag{
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
 
 #Menu{
   margin:0px !important;
@@ -139,6 +138,32 @@ li a:hover {
   color: black;
 }
 
+@media(max-width: 450px){
+
+  .TextosFooter{
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.5%;
+
+  }
+
+  .footer{
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid rgb(183, 156, 84);
+    background-color: rgb(11, 31, 19);
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    color: white;
+
+  }
+
+
+}
 
 </style>
 
