@@ -51,7 +51,7 @@
 
 
 
-<style>
+<style scoped>
 
 #ImgWpp{
   position: fixed;
@@ -60,9 +60,11 @@
 
 }
 
+
 .Page{
   flex: 1;
 }
+
 
 .Container{
   display: flex;
@@ -70,6 +72,7 @@
   flex: 1;
   height: 100vh;
 }
+
 
 .TextosFooter{
 
@@ -81,11 +84,12 @@ padding-top: 0.5%;
 
 }
 
+
 .footer{
 width: 100%;
 height: 100%;
-border-top: 2px solid rgb(183, 156, 84);
-background-color: rgb(11, 31, 19);
+border-top: 2px solid rgb(183, 156, 84) !important;
+background-color: rgb(11, 31, 19) !important;
 display: flex;
 flex-direction: row;
 font-size: 16px;
@@ -93,11 +97,14 @@ color: white;
 
 }
 
+
 .MenuPag{
   position: fixed;
   width: 100%;
   z-index: 9999;
+  font-weight: bold;
 }
+
 
 #Menu{
   margin:0px !important;
@@ -105,7 +112,8 @@ color: white;
   
 }  
 
-  /* Montando o Menu */
+
+/* Montando o Menu */
 ul {
   list-style-type: none;
   margin: 0;
@@ -122,7 +130,6 @@ ul {
 }
 
 
-
 li a {
   display: block;
   color: rgb(183, 156, 84);
@@ -137,6 +144,7 @@ li a:hover {
   background-color: rgb(183, 156, 84);
   color: black;
 }
+
 
 @media(max-width: 450px){
 
