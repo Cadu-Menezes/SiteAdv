@@ -42,7 +42,7 @@
       <q-dialog v-model="layout">
         <q-layout view="Lhh lpR fff" container class="bg-white text-dark">
           
-          <q-header class="bg-green">
+          <q-header style="background-color: black; opacity: 0.9; font-weight: bold; font-family: 'Abril Fatface', cursive; position: fixed;">
             <q-toolbar>
 
               <q-toolbar-title>
@@ -57,9 +57,7 @@
           <q-page-container>
             <q-page padding>
               <div v-for="n in contentSize" :key="n">
-                
-                <br>
-                
+                                
                 <div v-if="itemAtivo.id == 1">
                     <INSSComponent /> 
                 </div>
@@ -103,8 +101,6 @@
               </div>
             </q-page>
           </q-page-container>
-
-
         </q-layout>
       </q-dialog>
 
@@ -187,12 +183,23 @@
 
   </div>
 
-  <!-- Fim Index Page -->
 
+  <!-- Fim Index Page -->
 </template>
 
 <style>
 /* Ini Css IndexPage */
+
+.form input{
+  border-radius: 5px;
+  
+}
+
+.form textarea{
+  border-radius: 5px;
+  
+}
+
 
 .form button{
   margin-top: 10px;
@@ -328,26 +335,24 @@ html, body{
   justify-content: flex-start;
   align-items: center;
   background-attachment: fixed;
+  opacity: .9;
   
 }
 
 
 .textoadv{
 
-
-align-items: center;
-color: black;
-font-family: 'Alfa Slab One', cursive;
-font-family: 'Victor Mono', monospace;
-
-font-size: 24px;
+  font-family: 'Abril Fatface', cursive;
+  align-items: center;
+  color: black;
+  font-size: 24px;
 } 
 
 
 #TxtPrincipal{
-
-width: 90%;
-text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  width: 90%;
+  text-align: center;
 }
 
 /* Fim Css IndexPage */
@@ -405,12 +410,13 @@ font-size: max(12px, 1vw);
 
 
 .Titulo{
-text-align: center;
-color: white;
-font-family: 'Abril Fatface', cursive;
-/* font-family: 'Alfa Slab One', cursive;
-font-family: 'Victor Mono', monospace; */
-/* font-family: 'Vina Sans', cursive; */
+  
+  text-align: center;
+  color: white;
+  font-family: 'Abril Fatface', cursive;
+  /* font-family: 'Alfa Slab One', cursive;
+  font-family: 'Victor Mono', monospace; */
+  /* font-family: 'Vina Sans', cursive; */
 }
 
 
@@ -525,7 +531,7 @@ margin:0 auto;
       background-color: #275039;
       padding: 0.5%;
       color: white;
-      margin-bottom: 0.5;
+      margin-bottom: 2%;
   }
 
   .Socios p{
