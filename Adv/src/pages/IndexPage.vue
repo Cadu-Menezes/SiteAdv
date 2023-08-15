@@ -169,15 +169,14 @@
           <label for="Message">Mensagem:</label>
           <textarea name="message" id="message" cols="30" rows="10" placeholder="Escreva sua mensagem aqui."></textarea>
           
-          <q-btn color="green" icon-right="mail" label="Enviar Email" />
+          <q-btn style="background-color: rgb(50, 100, 39);" icon-right="mail" label="Enviar Email" /> 
 
+          
         </form>
         
       </div>
-      
-          
-          
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2478513549113!2d-43.17985932699068!3d-22.904227291913543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5f71b78e25%3A0xdbe393b0eee3f580!2sR.%20da%20Assembl%C3%A9ia%2C%2010%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020011-901!5e0!3m2!1spt-BR!2sbr!4v1691156844212!5m2!1spt-BR!2sbr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2478513549113!2d-43.17985932699068!3d-22.904227291913543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f5f71b78e25%3A0xdbe393b0eee3f580!2sR.%20da%20Assembl%C3%A9ia%2C%2010%20-%20Centro%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020011-901!5e0!3m2!1spt-BR!2sbr!4v1691156844212!5m2!1spt-BR!2sbr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
     </div>
 
@@ -187,13 +186,16 @@
   <!-- Fim Index Page -->
 </template>
 
-<style>
+<style scoped>
+
+
 /* Ini Css IndexPage */
 
 .form input{
   border-radius: 5px;
   
 }
+
 
 .form textarea{
   border-radius: 5px;
@@ -269,7 +271,9 @@
 
 
 .textoCIcone:hover{
-  background-color: black;
+  background-color: rgb(48, 165, 58);
+  transition: 1s;
+  transform: translateX(0) scale(1.11);
 }
 
 
@@ -354,10 +358,8 @@ html, body{
   width: 90%;
   text-align: center;
 }
-
 /* Fim Css IndexPage */
 /* Começo Css Escritorio */
-
 #Imagem1{
 /* border: 2px solid yellow; */
 width: 100%;
@@ -444,13 +446,15 @@ justify-content: space-around;
 
 
 #Valores{
-border: 2px solid rgb(183, 156, 84);
-text-align: center;
+  border: 2px solid rgb(183, 156, 84);
+  text-align: center;
+  padding: 0.5%;
+  border-radius: 10px;
+  background-color: #275039;
+  color: white;
 
-padding: 0.5%;
-border-radius: 10px;
-background-color: #275039;
-color: white;
+  animation-duration: 3s;
+  animation-name: slidein;
 
 }
 
@@ -462,13 +466,16 @@ color: rgb(183, 156, 84);
 
 
 #Missao{
-border: 2px solid rgb(183, 156, 84);
-text-align: center;
-margin-top: 2%;
-padding: 0.5%;
-border-radius: 10px;
-background-color: #275039;
-color: white;
+  border: 2px solid rgb(183, 156, 84);
+  text-align: center;
+  margin-top: 2%;
+  padding: 0.5%;
+  border-radius: 10px;
+  background-color: #275039;
+  color: white;
+
+  animation-duration: 3s;
+  animation-name: slideout;
 
 }
 
@@ -479,20 +486,47 @@ color: rgb(183, 156, 84);
 
 
 #QuemSomos{
-margin-top: 2%;
-border: 3px solid rgb(183, 156, 84);
-text-align: center;
-width: 90%;
-padding: 0.5%;
-border-radius: 10px;
-background-color: #275039;
-color: white;
+  margin-top: 2%;
+  border: 3px solid rgb(183, 156, 84);
+  text-align: center;
+  width: 90%;
+  padding: 0.5%;
+  border-radius: 10px;
+  background-color: #275039;
+  color: white;
 
+  animation-duration: 6s;
+  animation-name: slidein;
 }
 
 
 #QuemSomos h4{
 color: rgb(183, 156, 84);
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    
+  }
+
+  to {
+    margin-left: 0%;
+    
+  }
+}
+
+@keyframes slideout {
+  from {
+    margin-right: 100%;
+    
+  }
+
+  to {
+    margin-right: 0%;
+    
+  }
 }
 
 
@@ -511,11 +545,11 @@ margin-top: 1%;
 
 #ContainerCards{
 
-/* border: 2px solid blue;  */
-position: relative;
-max-width: 100%;
-margin:0 auto;
-
+  /* border: 2px solid blue;  */
+  position: relative;
+  max-width: 100%;
+  margin:0 auto;
+  
 }
 
 
@@ -549,16 +583,13 @@ margin:0 auto;
       position: relative;
   }
 
+
   #ContainerSocios{
       /* border: 2px solid blue; */
       width: 95%;
-      
       display: flex;
       flex-direction: column;
-      
       align-items: center;
-
-
       position: absolute;
       
   }
@@ -581,6 +612,7 @@ margin:0 auto;
   
   }
 
+
   #Imagem3{
       /* border: 2px solid yellow; */
       width: 100%;
@@ -590,8 +622,6 @@ margin:0 auto;
       background-position: center center;
   }
 
-
-  /* Contato */
 
   .form button{
       margin-top: 10px;
@@ -613,16 +643,14 @@ margin:0 auto;
   #TextoContato{
       /* border: 2px solid white;  */
       width: 100%;
-      
       display: flex;
-      flex-direction: column;
-      
+      flex-direction: column;      
   }
 
   #Contato{
       /* border: 2px solid red;  */
       width: 100%;
-  
+      
   }
 
 }

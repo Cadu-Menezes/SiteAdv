@@ -63,6 +63,8 @@
 
 .Page{
   flex: 1;
+  background-color: rgb(11, 20, 10);
+  color: white;
 }
 
 
@@ -143,6 +145,7 @@ li a {
 li a:hover {
   background-color: rgb(183, 156, 84);
   color: black;
+  transition: 1s;
 }
 
 
